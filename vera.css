@@ -1,0 +1,26 @@
+.deviceName {
+    text-align: left;
+    font-size: 15px;
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    line-height: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #999;
+  }
+
+.status {
+    width: 30px;
+}
+
+.deviceOff {
+    background-image: url('./images/light-off.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+}
+
+.deviceOn {
+    background-image: url('./images/light-on.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+}

@@ -160,26 +160,38 @@ Module.register("MMM-MiOSView", {
                 var deviceRow = document.createElement("tr");
                 table.appendChild(deviceRow);
 
+                //Status reported
+                var deviceStatusCell = document.createElement("td");
+
+                if ((myDevice.status == 0)) {
+                    deviceStatusCell.className = "status deviceOff";
+                }
+                else if ((myDevice.status == 1)) {
+                    deviceStatusCell.className = "status bright deviceOn";
+                }
+                else {
+                    deviceStatusCell.className = "";
+                }
+                //deviceStatusCell.innerHTML = myDevice.status;
+                deviceStatusCell.innerHTML = "&nbsp;"
+
+                deviceRow.appendChild(deviceStatusCell);
+
                 //device cell
                 var deviceCurrentCell = document.createElement("td");
-                    deviceCurrentCell.innerHTML = myDevice.name;
-                    deviceRow.appendChild(deviceCurrentCell);
+                deviceCurrentCell.innerHTML = myDevice.name;
 
-                    //Time reported
-                    var deviceStatusCell = document.createElement("td");
+                if ((myDevice.status == 0)) {
+                    deviceCurrentCell.className = "deviceName";
+                }
+                else if ((myDevice.status == 1)) {
+                    deviceCurrentCell.className = "bright deviceName";
+                }
+                else {
+                    deviceCurrentCell.className = "deviceName";
+                }
 
-                    if ((myDevice.status == 0)) {
-                        deviceStatusCell.className = "bright status deviceOff";
-                    }
-                    else if ((myDevice.status == 1)) {
-                        deviceStatusCell.className = "bright status deviceOn";
-                    }
-                    else {
-                        deviceStatusCell.className = "bright ";
-                    }
-                    deviceStatusCell.innerHTML = myDevice.status
-
-                    deviceRow.appendChild(deviceStatusCell);
+                deviceRow.appendChild(deviceCurrentCell);
                 }
 
         } else {
