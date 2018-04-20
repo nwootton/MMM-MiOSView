@@ -1,7 +1,7 @@
 # MMM-MiOSView #
 Additional Module for MagicMirror²  https://github.com/MichMich/MagicMirror
 
-Early Alpha - Concept for forum only
+Alpha Concept - Unsupported for discussion only
 
 # Module: MiOS View #
 This module displays information from a local MiCasa Verde Vera HA controller.
@@ -31,11 +31,11 @@ modules: [
 	},
 ]
 ```
-There is 1 MANDATORY fields - `veraURL`.
+There is 1 MANDATORY field - `veraURL` this is the IP address of the Vera device on the local network.
 
 ## MiOS API ##
 
-This module assumes that the Vera device is on the same network as the Mirror. It does not support access via MCV public servers
+This module assumes that the Vera device is on the same network as the Mirror. It does not support access via MCV forwarding servers.
 
 ## Translations ##
 
