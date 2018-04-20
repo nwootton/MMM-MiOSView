@@ -1,0 +1,27 @@
+{
+  "name": "mmm-miosview",
+  "version": "0.0.2",
+  "description": "MiOS status viewer",
+  "main": "MMM-MiOSView.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwootton/MMM-MiOSView.git"
+  },
+  "keywords": [
+    "Magic",
+    "Mirror",
+    "Module"
+  ],
+  "author": "NJW",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nwootton/MMM-MiOSView/issues"
+  },
+  "homepage": "https://github.com/nwootton/MMM-MiOSView#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
