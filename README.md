@@ -1,7 +1,7 @@
 # MMM-MiOSView #
 Additional Module for MagicMirror²  https://github.com/MichMich/MagicMirror
 
-Alpha Concept - Unsupported for discussion only
+Alpha Concept - Unsupported - this is for example only
 
 # Module: MiOS View #
 This module displays information from a local MiCasa Verde Vera HA controller.
@@ -43,4 +43,4 @@ This module includes translations. I've included English and German, but the Ger
 
 ## Troubleshooting ##
 
-I only have access to a Vera Lite running UI5, so any issues resulting from using other Vera boxes or UI versions I am unable to support.
+Unsupported concept - I only have access to a Vera Lite running UI5, so any issues resulting from using other Vera boxes or UI versions I am unable to support.
