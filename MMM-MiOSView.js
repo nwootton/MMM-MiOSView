@@ -30,6 +30,7 @@ Module.register("MMM-MiOSView", {
 
 
         veraURL:    '',                 // URL of Local Vera box
+        veraCategories:     [3],
         header:     'Vera Status',
         debug:      false
     },
@@ -220,6 +221,7 @@ Module.register("MMM-MiOSView", {
                         var deviceInfo = data.devices[i];
 
                         if (deviceInfo.category == 3) {
+                        //if (data.categories.indexOf(this.veraCategories) > -1) {
                             this.VeraData.devices.push(
                             {
                                 name: deviceInfo.name,
