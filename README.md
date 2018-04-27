@@ -3,7 +3,7 @@ Additional Module for MagicMirror²  https://github.com/MichMich/MagicMirror
 
 Alpha Concept - Unsupported - this is for example only.
 * Status of any device category **except** 3 is not mapped
-* Device categories are based on _my_ Veralite, so not complete list
+* Device categories are based on _my_ Veralite, so probably not complete list
 
 # Module: MiOS View #
 This module displays information from a local MiCasa Verde Vera HA controller.
@@ -39,7 +39,7 @@ There are 2 MANDATORY fields - `veraURL` and `veraCategories`.
 |Option|Required Settings Description|
 |---|---|
 |`veraURL`| IP Address of your local Vera box. <br/><br/>**REQUIRED:** 192.168.1.100 |
-|`veraCategories`| Array. Array of device categories to display. <br/><br/>**REQUIRED:** [2,3,11|
+|`veraCategories`| Array. Array of device categories to display. <br/><br/>**REQUIRED:** [2,3,11] |
 
 |Option|Optional Settings Description|
 |---|---|
