@@ -1,7 +1,9 @@
 # MMM-MiOSView #
 Additional Module for MagicMirror²  https://github.com/MichMich/MagicMirror
 
-Alpha Concept - Unsupported - this is for example only
+Alpha Concept - Unsupported - this is for example only.
+* Status of any device category **except** 3 is not mapped
+* Device categories are based on_my_ Veralite, so not complete list
 
 # Module: MiOS View #
 This module displays information from a local MiCasa Verde Vera HA controller.
@@ -32,7 +34,7 @@ modules: [
 	},
 ]
 ```
-There is 1 MANDATORY field - `veraURL` this is the IP address of the Vera device on the local network.
+There are 2 MANDATORY fields - `veraURL` and `veraCategories`.
 
 |Option|Required Settings Description|
 |---|---|
