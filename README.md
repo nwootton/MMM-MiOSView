@@ -47,6 +47,7 @@ There are 2 MANDATORY fields - `veraURL` and `veraCategories`.
 
 ## Categories ##
 The following device categories are available:
+
 |ID|Type|
 |---|---|
 | 2  |Dimmable Light|
