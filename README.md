@@ -26,12 +26,39 @@ modules: [
 		position: 		'bottom_left',
 		header:			'Vera Status',		//Optional - delete this line to turn OFF the header completely
 		config: {
-			veraURL:	'192.168.1.159' 		// IP address of local Vera box
+			veraURL:	'192.168.1.159', 		// IP address of local Vera box
+			veraCategories: [3]					// Array of device categories to display
 		}
 	},
 ]
 ```
 There is 1 MANDATORY field - `veraURL` this is the IP address of the Vera device on the local network.
+
+|Option|Required Settings Description|
+|---|---|
+|`veraURL`| IP Address of your local Vera box. <br/><br/>**REQUIRED:** 192.168.1.100 |
+|`veraCategories`| Array. Array of device categories to display. <br/><br/>**REQUIRED:** [2,3,11|
+
+|Option|Optional Settings Description|
+|---|---|
+|`updateInterval`| Time between updates in ms. <br/><br/>**Default:** 300000 (5 minutes)|
+
+## Categories ##
+The following device categories are available:
+|ID|Type|
+|---|---|
+| 2  |Dimmable Light|
+| 3  |Switch|
+| 4  |Sensor|
+| 11 |Generic I/O|
+| 15 |A/V|
+| 16 |Humidity Sensor|
+| 17 |Temperature Sensor|
+| 18 |Light Sensor|
+| 21 |Power Meter|
+
+There may be others, but this is what _my_ Vera returns.
+
 
 ## MiOS API ##
 

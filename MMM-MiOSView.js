@@ -29,10 +29,10 @@ Module.register("MMM-MiOSView", {
         NumFailures:    0,
 
 
-        veraURL:    '',                 // URL of Local Vera box
-        veraCategories:     [3],
-        header:     'Vera Status',
-        debug:      false
+        veraURL:            '',                 // URL of Local Vera box
+        veraCategories:     [],
+        header:             'Vera Status',
+        debug:              false
     },
 
     // Define required scripts.
@@ -93,8 +93,14 @@ Module.register("MMM-MiOSView", {
     getDom: function() {
         var wrapper = document.createElement("div");
 
-        if (this.config.api_key === "") {
-            wrapper.innerHTML = this.translate("SET_KEY") + ": " + this.api_key + ".";
+        if (this.config.veraURL === "") {
+            wrapper.innerHTML = this.translate("SET_IP");
+            wrapper.className = "dimmed light small";
+            return wrapper;
+        }
+
+        if (this.config.veraCategories === "") {
+            wrapper.innerHTML = this.translate("SET_CATEGORIES");
             wrapper.className = "dimmed light small";
             return wrapper;
         }
@@ -184,7 +190,6 @@ Module.register("MMM-MiOSView", {
 
     /* processVeraData(data)
      * Uses the received data to set the various values.
-     *
      */
     processVeraData: function(data) {
 
@@ -220,8 +225,7 @@ Module.register("MMM-MiOSView", {
                     for (var i=0; i < data.devices.length; i++) {
                         var deviceInfo = data.devices[i];
 
-                        if (deviceInfo.category == 3) {
-                        //if (data.categories.indexOf(this.veraCategories) > -1) {
+                        if (this.config.veraCategories.indexOf(parseInt(deviceInfo.category)) > -1) {
                             this.VeraData.devices.push(
                             {
                                 name: deviceInfo.name,

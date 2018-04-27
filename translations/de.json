@@ -1,5 +1,6 @@
 {
     "HEADER": "Vera Status",
     "SET_IP": "Bitte stellen Sie die IP-Adresse Ihres Vera-Geräts ein",
+    "SET_CATEGORIES": "Bitte legen Sie einige Gerätekategorien fest",
     "LOAD_MSG": "Lade Vera Daten ..."
   }
