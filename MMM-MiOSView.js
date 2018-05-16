@@ -57,7 +57,7 @@ Module.register("MMM-MiOSView", {
         return {
                 en: "translations/en.json",
                 de: "translations/de.json"
-        }
+        };
     },
 
     // Define start sequence.
@@ -143,7 +143,7 @@ Module.register("MMM-MiOSView", {
                     deviceStatusCell.className = "";
                 }
                 //deviceStatusCell.innerHTML = myDevice.status;
-                deviceStatusCell.innerHTML = "&nbsp;"
+                deviceStatusCell.innerHTML = "&nbsp;";
 
                 deviceRow.appendChild(deviceStatusCell);
 
