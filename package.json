@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/nwootton/MMM-MiOSView#readme",
   "dependencies": {
-    "request": "^2.81.0"
+    "request": "^2.88.0"
   }
 }
